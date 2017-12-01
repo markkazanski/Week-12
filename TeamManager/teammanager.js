@@ -32,3 +32,5 @@ function randomIntFromInterval(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+//var p1 = new Players("billy", "forward", 10, 20);
+//p1.printStats();
