@@ -1,13 +1,16 @@
 var Student = require("./student.js");
 
-var Class(studentsArr, prof, room){
+function Class(studentsArr, prof, room){
     this.studentsArr = studentsArr;
-    this.studentsNum = this.StudentsArr.length;
+    this.studentsNum = this.studentsArr.length;
     this.prof = prof;
     this.room = room;
     this.addStudent = function(name, subject, gpa){
         var newStudent = new Student(name, subject, gpa);
         studentsArr.push(newStudent);
+    };
+    this.numberOfStudents = function(){
+        return this.studentsArr.length;
     };
 };
 
@@ -17,4 +20,10 @@ var bunchOfStudents = [
     new Student("joey", "science", 3)
 ];
 
-console.log(bunchOfStudents);
+var actualClass = new Class( bunchOfStudents, "Mr Bongo", 55 );
+
+actualClass.addStudent("New Kid", "math", 55);
+
+console.log(actualClass);
+
+console.log(actualClass.numberOfStudents());
