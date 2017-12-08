@@ -2,6 +2,8 @@ var fs = require("fs");
 
 var user = "billy";
 
+
+
 var x = "asdfasdf";
 
 function LogData(data, textFile){
@@ -16,6 +18,7 @@ function LogData(data, textFile){
     
         // If no error is experienced, we'll log the phrase "Content Added" to our node console.
         else {
+
             console.log("Content Added!");
         }
         
